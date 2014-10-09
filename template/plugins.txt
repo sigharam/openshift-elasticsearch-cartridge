@@ -50,3 +50,12 @@ polyfractal/elasticsearch-inquisitor
 
 ## Uncomment line below to install this plugin
 #polyfractal/elasticsearch-segmentspy
+
+## Description:
+## Plugin shows the elasticsearch node and cluster stats.
+##
+## URL:
+##   http://www.elasticsearch.org/overview/marvel/
+
+## Uncomment line below to install this plugin
+elasticsearch/marvel/latest
