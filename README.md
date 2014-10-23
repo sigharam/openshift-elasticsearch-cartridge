@@ -24,6 +24,7 @@ To install ElasticSearch plugins -
 * commit
 * push your changes to openshift.
 
+The above steps have been tested in OpenShift Online (v2). For Openshift Enterprise, in case it does not have internet access, you may need to copy the plugins and install them.
 
 License
 =======
