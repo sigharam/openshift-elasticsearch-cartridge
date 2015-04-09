@@ -378,6 +378,7 @@ discovery.zen.ping.unicast.hosts: ${OPENSHIFT_ELASTICSEARCH_CLUSTER}
 #monitor.jvm.gc.old.debug: 2s
 
 ################################## Marvel Logging #############################
+marvel.agent.enabled: true
 marvel.agent.exporter.es.hosts: ${OPENSHIFT_ELASTICSEARCH_IP}:${OPENSHIFT_ELASTICSEARCH_PORT}
 marvel.agent.interval: 60s
 
