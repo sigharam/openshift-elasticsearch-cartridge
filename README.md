@@ -25,7 +25,3 @@ To install ElasticSearch plugins -
 * push your changes to openshift.
 
 The above steps have been tested in OpenShift Online (v2). For Openshift Enterprise, in case it does not have internet access, you may need to copy the plugins and install them.
-
-License
-=======
-This project is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
