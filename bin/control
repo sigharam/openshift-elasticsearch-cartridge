@@ -57,7 +57,7 @@ function start() {
     return 0
   fi
   # copy config from repo
-  _copy_config
+  _es_copy_config
   export PUBLISH_HOST=$(python -c "import socket; print socket.gethostbyname('$OPENSHIFT_GEAR_DNS')")
 
   $OPENSHIFT_ELASTICSEARCH_DIR/usr/bin/elasticsearch -d -p $PID_FILE
@@ -102,7 +102,7 @@ function status() {
 }
 
 function deploy() {
-  _copy_config
+  _es_copy_config
   _install_plugins
   restart
 }
