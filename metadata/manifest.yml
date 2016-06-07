@@ -1,12 +1,12 @@
 Name: elasticsearch
 Cartridge-Short-Name: ELASTICSEARCH
-Display-Name: ElasticSearch 1.7.1
-Description: "ElasticSearch 1.7.1"
-Version: 1.7.1
+Display-Name: Elasticsearch 2.3.3
+Description: "Elasticsearch 2.3.3"
+Version: 2.3.3
 License: Apache
 Vendor: elasticsearch.org
-Cartridge-Version: 1.7.1
-Cartridge-Vendor: rbrower3
+Cartridge-Version: 2.3.3
+Cartridge-Vendor: unsalted
 
 Categories:
   - web_framework
@@ -14,7 +14,7 @@ Categories:
 
 Provides:
   - elasticsearch
-  - elasticsearch-1.7.1
+  - elasticsearch-2.3.3
 
 Publishes:
   publish-unicast-host:
@@ -47,3 +47,4 @@ Endpoints:
     Private-Port-Name: TRANSPORT_PORT
     Private-Port:      9300
     Public-Port-Name:  TRANSPORT_PROXY_PORT
+Source-Url: https://github.com/unsalted/openshift-elasticsearch-cartridge/archive/master.zip
