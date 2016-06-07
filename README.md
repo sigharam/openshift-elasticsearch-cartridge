@@ -2,10 +2,10 @@ OpenShift ElasticSearch **2.3.3** Cartridge
 =================================
 Downloadable ElasticSearch cartridge for OpenShift.
 
-This is an working attempt at updating to 2.3.3 use at your own risk. I have had a three node cluster running since 3.28.2016
+This is an working attempt at updating to 2.3.3 use at your own risk. I (@unsalted) have had a three node cluster running since 3.28.2016
 Below is obviously not the method for instaling the app - if things are stable for a bit longer i'll request a git pull from rbrower's branch.
 
-I've moved some things around and made small changes to the rbrower branch:
+I've moved some things around and made small changes to the rbrower3 branch:
 
   - set cluster.name as a (modifiable) env variable which is based on namesspace and app name rather than app uuid
   - moved config to templates **I found this neccessary because occasionaly cors settings etc. need to be set in config**
@@ -14,7 +14,7 @@ I've moved some things around and made small changes to the rbrower branch:
 
 there is currently a manifest.yml you can use for install at:
 
-    https://raw.githubusercontent.com/unsalted/openshift-elasticsearch-cartridge/master/metadata/manifest.yml
+    https://raw.githubusercontent.com/rbrower3/openshift-elasticsearch-cartridge/v2.3.3/metadata/manifest.yml
 
 To create your scalable ElasticSearch app, run:
 
