@@ -7,15 +7,12 @@ License: Apache
 Vendor: elasticsearch.org
 Cartridge-Version: 2.4.4
 Cartridge-Vendor: sigharam
-
 Categories:
-  - web_framework
-  - service
-
+ - web_framework
+ - service
 Provides:
-  - elasticsearch
-  - elasticsearch-2.4.4
-
+ - elasticsearch
+ - elasticsearch-2.4.4
 Publishes:
   publish-unicast-host:
     Type: NET_TCP:elasticsearch-cluster-info
@@ -23,28 +20,24 @@ Publishes:
     Type: NET_TCP:httpd-proxy-info
   publish-gear-endpoint:
     Type: NET_TCP:gear-endpoint-info
-
 Subscribes:
   set-unicast-hosts:
     Type: NET_TCP:elasticsearch-cluster-info
-
 Scaling:
   Min: 1
   Max: -1
-
 Endpoints:
-  - Private-IP-Name:   IP
-    Private-Port-Name: PORT
-    Private-Port:      9200
-    Public-Port-Name:  PROXY_PORT
-    Protocols:
-    - http
-    Mappings:
-    - Frontend: ''
-      Backend: ''
-
-  - Private-IP-Name:   IP
-    Private-Port-Name: TRANSPORT_PORT
-    Private-Port:      9300
-    Public-Port-Name:  TRANSPORT_PROXY_PORT
+ - Private-IP-Name:   IP
+   Private-Port-Name: PORT
+   Private-Port:      9200
+   Public-Port-Name:  PROXY_PORT
+   Protocols:
+   - http
+   Mappings:
+   - Frontend: ''
+     Backend: ''
+ - Private-IP-Name:   IP
+   Private-Port-Name: TRANSPORT_PORT
+   Private-Port:      9300
+   Public-Port-Name:  TRANSPORT_PROXY_PORT
 Source-Url: https://github.com/sigharam/openshift-elasticsearch-cartridge/archive/master.zip
